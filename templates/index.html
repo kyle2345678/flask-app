@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kyle's Dealership</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body>
+        {% block body %}
+        <div class ='title'>
+            <h1>
+                Kyle's Car Dealership Database
+            </h1>
+        </div>
+        <span></span>
+        <table>
+            <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+            {% for car in cars %}
+            <tr>
+                <td>{{car.make}}</td>
+                <td>{{car.model}}</td>
+                <td>{{car.year}}</td>
+                <td>{{car.price}}</td>
+                <td>
+                    <a href="/delete/{{car.id}}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+            <tr>
+
+            </tr>
+                
+        </table>
+        {% endblock %}
+        <span></span>
+        <div class = "NewCar">
+        <form action="/" method="POST">
+            <h1>Add a Car!</h1>
+            <h3>Car Make</h3>
+            <input type="text" name="make" id="make" placeholder="Enter Make"><br />
+            <h3>Car Model</h3>
+            <input type="text" name="model" id="model" placeholder="Enter Model"><br />
+            <h3>Car Year</h3>
+            <input type="text" name="year" id="year" placeholder="Enter Year"><br />
+            <h3>Car Price</h3>
+            <input type="text" name="price" id="price" placeholder="Enter Price"><br />
+            <h3>Submit your Car!</h3>
+            <input type="submit" name="Add Car">
+        </div>
+        </form>
+    </body>
+</html>

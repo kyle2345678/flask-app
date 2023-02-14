@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap');
+
+.title 
+{
+    border-radius: 45px;
+    background-color: #FFE6EE;
+    color: pink;
+    font-family: 'Proza Libre', sans-serif;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+}
+
+th {
+    background-color: #FFE6EE;
+    color: white; 
+}
+
+th,td {
+    border: 1px solid black; 
+    border-radius: 20px;
+    
+    padding:15px
+}
+table{
+    padding: 10px; 
+    font-family: 'Proza Libre', sans-serif;
+    border-radius: 30px;
+    color: pink;
+    margin:auto;
+    text-align: center;
+    border: 10px solid pink;
+
+}
+a {
+    color: black; 
+}
+a:hover {
+    color: pink; 
+}
+
+.NewCar {
+    color: pink;
+    background-color: #FFE6EE;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: 'Proza Libre', sans-serif;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    
+}
+span
+{
+    padding: 30px; 
+}
